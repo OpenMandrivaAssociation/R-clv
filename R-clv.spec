@@ -9,8 +9,14 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.3-2.tar.gz
-Requires:         R-cluster R-class 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-cluster R-class
+Requires:         R-cluster
+Requires:         R-class 
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex
+BuildRequires:    R-cluster
+BuildRequires:    R-class
+BuildRequires:    pkgconfig(lapack)
 
 %description
 Package contains most of the popular internal and external cluster
@@ -45,3 +51,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Mon Feb 20 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3_2-1
++ Revision: 777613
+- Import R-clv
+- Import R-clv
+
