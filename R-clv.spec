@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.3_2
+Version:          0.3.2
 Release:          1
 Summary:          Cluster Validation Techniques
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.3-2.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/clv_0.3-2.tar.gz
 Requires:         R-cluster
 Requires:         R-class 
 BuildRequires:    R-devel
@@ -58,4 +58,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 777613
 - Import R-clv
 - Import R-clv
+
 
