@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.3_2
-Release:          2
+Release:          3
 Summary:          Cluster Validation Techniques
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
